@@ -4,7 +4,7 @@ class Rope {
         bodyA: bodyA,
         pointB: pointB,
         stiffness: 1.5,
-        length: 200,
+        length: 100,
       };
   
       this.pointB = pointB;
@@ -31,7 +31,7 @@ class Rope {
                   strokeWeight(7);
                   stroke("white");
                   line(pointA.x, pointA.y, pointB.x, pointB.y);
-                  line(pointA.x, pointA.y, pointB.x, pointB.y+400);
+                  line(pointA.x, pointA.y, pointB.x, pointB.y+200);
                 
               }
               else{

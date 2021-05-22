@@ -2,7 +2,7 @@ class Pin {
     constructor(x,y, width, height) {
       var options = {
     'restitution':1,
-    'density':90,
+    'density':100,
     'frictionAir':0,
     'friction':2,
     isStatic:false
@@ -21,15 +21,12 @@ class Pin {
       stroke(255)
       fill(this.color);
       rectMode(CENTER);
-      this.visibilty=this.visibilty-2
+      this.visibilty=this.visibilty-1
      
       rect(pos.x, pos.y, this.width, this.height);
       pop();
       }else{
         World.remove(world, this.body);
-        fill("white");
-        textSize(40);
-        text("wow!", 500, 200);
       }
     }
   }
